@@ -1,0 +1,291 @@
+$mainColor: #a43e4cc2;
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 1vw;
+}
+
+body {
+    position: relative;
+    min-height: 650px;
+    margin: 0px;
+    background-image: url(../Imgs/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #3e3e3e;
+    background-blend-mode: overlay;
+    font-family: 'Bellota', cursive;
+}
+
+.container {
+    width: 60%;
+    margin: 0px 5% 0px 35%;
+}
+
+.mainMenu {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 50px 0px;
+    left: 5%;
+    background-color: $mainColor;
+    color: #F3EDF9;
+    box-shadow: 0px 0px 10px #000000;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+    .profilePic {
+        width: 60%;
+        padding: 4px;
+        border-radius: 50%;
+        border: 2px solid;
+    }
+    h2 {
+        margin: 20px 0px 10px;
+    }
+    h4 {
+        margin: 5px 0px 40px;
+    }
+    .navBar {
+        padding: 0; margin: 0;
+        list-style: none;
+        li {
+            padding: 15px 0px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid white;
+            transition: all .7s ease; 
+            cursor: pointer; 
+            &.active, &:hover {
+                background-color: #F3EDF9;
+                color: black;
+                font-weight: bold;
+            }
+                      
+        }
+    }
+}
+
+.socialMedia {
+    position: fixed;
+    left: 10px; top: 10%;
+    display: block;
+    padding: 0; margin: 20px 0px;
+    list-style: none;
+    justify-content: center;
+    &:after, &:before {
+        content: '';
+        display: block;
+        width: 2px; height: 150px;
+        margin: auto;
+        background-color: $mainColor;
+    }
+    li {
+        margin: 15px 5px;
+        img {
+            width: 28px;
+            border-radius: 50%;
+        }
+        
+    }
+}
+
+.about {
+    padding-top: 100px;
+    text-align: center;
+    color: #d8d5d5;
+    h1 {
+        font-size: 2.5rem;
+        &:after {
+            content: '';
+            display: block;
+            width: 10%; height: 2px;
+            margin: 10px auto;
+            background-color: $mainColor;
+        }
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    hr {
+        background-color: #8c3a48;
+        height: 2px;
+        width: 80%;
+        border: none;
+        margin: 50px auto;
+    }
+}
+
+/* Start of Skills */
+
+.skills {
+    margin: 100px 0px;
+    text-align: center;
+    color: white;
+    h1:after {
+        content: '';
+        display: block;
+        width: 10%; height: 2px;
+        margin: 10px auto;
+        background-color: $mainColor;
+    }
+    .languages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 0px;
+        .lang {
+            width: 30%;
+            margin: 0px 1.5%;
+            text-align: center;
+            img {
+                width: 50%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    .subSkills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .skill {
+            width: 14%;
+            margin: 10px 1%;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #0000008f;
+            font-size: 1.1rem;
+            img {
+                width: 60%;
+                height: 50px;
+            }
+        }
+    } 
+}
+
+/* End of Skills */
+
+/* Start of services */
+
+.services {
+    width: 75%;
+    margin: 0px 0px 0px 25%;
+    padding: 0px 20px 20px 20px;
+    background-color: #0000008f;
+    color: white;
+    h1 {
+        width: 25%;
+        margin: 0px auto 40px;
+        padding: 15px 0px;
+        text-align: center;
+        background-image: linear-gradient( #4e212b, #88394a);
+        border-radius: 0px 0px 40px 40px;
+        box-shadow: 0px 4px 4px #000000;
+    }
+    .service {
+        display: flex;
+        h3 {
+            position: relative;
+            width: 20%;
+            margin: 0px; padding: 20px;
+            border-right: 2px solid #c5c3c3;
+            font-size: 1.3rem;
+            &::after {
+                content: '';
+                position: absolute;
+                right: -9px; top: 25px;
+                width: 12px; height: 12px;
+                border: 2px solid #c5c3c3;
+                border-radius: 50%;
+                background-color: #a43e4c;
+            }
+        }
+        p {
+            width: 50%;
+            margin: 0px; 
+            padding: 20px;
+        }
+
+        img {
+            width: 30%;
+            padding: 20px;
+            border-radius: 30px;
+        }
+    }
+}
+
+/* Start of my works */
+
+.myWorks {
+    padding: 50px 0px;
+    text-align: center;
+    color: white;
+    h1 {
+        text-align: left;
+        &:after {
+        content: '';
+        display: block;
+        width: 100%; height: 2px;
+        margin: 20px auto;
+        background-color: $mainColor;
+        }
+    }    
+    .work {
+        margin: 50px auto;
+        h2 {
+            margin: 30px 0px 0px;
+        }
+        .visit {
+            width: 100px;
+            height: 40px;
+            margin: 15px auto 30px;
+            color: white;
+            background-color: #87394b;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover {
+                background-color: white;
+                color: black
+            }
+    
+        }
+        .site {
+            width: 90%;
+            height: 400px;
+            margin: auto;
+            display: block;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+        }
+
+    }   
+}
+
+.contacts {
+    text-align: center;
+    color: white;
+    h1 {
+        margin: auto;
+    }
+    .contact {
+        display: flex;
+        margin: 20px 0px;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+        background-color: #827e7e80;
+        border-radius: 20px;
+        img {
+            margin-right: 20px
+        }
+        p {
+
+        }
+    }
+}
+    

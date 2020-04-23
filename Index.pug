@@ -1,0 +1,127 @@
+doctype html
+html(lang='en')
+   head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-with, initial-scale=1, shrink-to-fit=no')
+      title MyPortfolio
+      link(rel='stylesheet' href='Css/all.min.css')
+      link(rel='stylesheet' href='Css/style.css')
+      link(href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet")
+
+   body
+      .mainMenu
+         img(class="profilePic", src="Imgs/profilePic1.jpg", alt="")
+         h2 Mosaab Mohamed
+         h4 Front-End Developer
+         ul.navBar
+            li(class='active' data-name='about') About Me
+            li(data-name='skills') Skills
+            li(data-name='services') Services
+            li(data-name='works') My Works
+            li(data-name='contacts') Contact Me
+      ul.socialMedia
+         li(title='facebook')
+            a(href='https://www.facebook.com/' target='_blank')
+               img(src='Imgs/facebook.png')
+         li(title='github')
+            a(href='https://github.com/Mosaab-Etman' target='_blank')
+               img(src='Imgs/github.png')
+         li(title='upwork')
+            a(href='https://www.upwork.com/o/profiles/users/~01ae5e7d68934ab7b7/' target='_blank')
+               img(src='Imgs/upwork.png')
+         li(title='linkedin')
+            a(href='https://www.linkedin.com/in/mosaab-mohamed-652806bb/' target='_blank')
+               img(src='Imgs/linkedin.png')
+               
+      .about(data-name='about')
+         .container 
+            h1 About Me
+            p I'm a freelancer front end developer, I design website UI and convert it to codes which are clean and short. I build responsive websites for all screens. I'm a freelancer front end developer, I design website UI and convert it to codes which are clean and short. I build responsive websites for all screens. 
+            hr
+
+      .skills(data-name='skills')
+         .container
+            h1 Languages & Skills
+            .languages
+               .lang
+                  img(src="Imgs/html.png", alt="")
+                  h2 Html
+               .lang
+                  img(src="Imgs/css.png", alt="")
+                  h2 Css
+               .lang
+                  img(src="Imgs/js.png", alt="")
+                  h2 Javascript
+            .subSkills
+               .skill
+                  img(src="Imgs/bootstrap.png", alt="")
+                  h3 Bootstrap 
+               .skill
+                  img(src="Imgs/jquery.png", alt="")
+                  h3 Jquery 
+               .skill
+                  img(src="Imgs/pugjs.png", alt="")
+                  h3 Pugjs 
+               .skill
+                  img(src="Imgs/sass1.png", alt="")
+                  h3 Sass 
+               .skill
+                  img(src="Imgs/gulpjs.png", alt="")
+                  h3 Gulpjs
+               .skill
+                  img(src="Imgs/es6.png", alt="")
+                  h3 Es6
+
+      // Start of Services
+
+      .services(data-name='services')
+         h1 Services
+         .service
+            h3 Landing Pages
+            p Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co
+            img(src='Imgs/code.jpg')
+
+         .service
+            h3 Creative & Respnsive Design
+            p Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co
+            img(src='Imgs/ideas.jpg')
+
+         .service
+            h3 Static Website
+            p Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co
+            img(src='Imgs/website.jpg')
+         .service
+            h3 Maintainance
+            p Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet co
+            img(src='Imgs/maintainance.jpg')
+
+      // Start of My works
+      .myWorks(data-name='works')
+         .container
+            h1 My Works
+            .work
+               h2 Travel Agency Website
+               a(href='https://mosaab-etman.github.io/Travel-Agency/Home' target='_blank')
+                  button.visit Visit
+               iframe(class='site' src='https://mosaab-etman.github.io/Travel-Agency/Home')
+            .work
+               h2 E-commerce Website
+               a(href='https://mosaab-etman.github.io/EgyKoshk/Home.html' target='_blank')
+                  button.visit Visit
+               iframe(class='site' src='https://mosaab-etman.github.io/EgyKoshk/Home.html')
+            hr
+      // Start of Contacts
+
+      .contacts(data-name='contacts')
+         .container
+            h1 Contact Me
+            .contact
+               img(src='Imgs/whatsapp.png')
+               p +20 01022929714
+            .contact 
+               img(src='Imgs/google-plus.png')
+               p mosaab.ebrahim2012@feps.edu.eg
+
+      // Js Files
+      script(src='Js/jquery.min.js')
+      script(src='Js/Main.js')
